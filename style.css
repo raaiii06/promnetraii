@@ -1,0 +1,213 @@
+/* CSS SEDERHANA - TEMA SKY BLUE */
+
+/* 1. ELEMENT SELECTOR */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eaf7ff;
+    color: #345;
+    font-family: Arial, sans-serif;
+}
+
+/* GROUPING SELECTOR */
+h1, h2, h3 {
+    color: #1976a8;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin: 25px 0;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+/* FLEXBOX */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 15px;
+    background-color: #bde7f7;
+}
+
+nav a {
+    color: #145a7a;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* HOVER + TRANSITION */
+nav a:hover {
+    color: white;
+    background-color: #42a5d5;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+/* CLASS SELECTOR + BOX MODEL */
+.card {
+    width: 80%;
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #9dd8ef;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* ID SELECTOR + WIDTH & HEIGHT + BOX MODEL */
+#profile-photo {
+    display: block;
+    width: 240px;
+    height: 240px;
+    margin: 25px auto;
+    padding: 5px;
+    border: 3px solid #42a5d5;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+/* HOVER */
+#profile-photo:hover {
+    transform: scale(1.05);
+}
+
+/* LIST */
+ul, ol {
+    line-height: 1.8;
+}
+
+li:hover {
+    color: #1685b5;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #9dd8ef;
+}
+
+th {
+    background-color: #42a5d5;
+    color: white;
+}
+
+tr:hover td {
+    background-color: #e1f5fd;
+}
+
+/* PROJECT IMAGES */
+.card img {
+    max-width: 240px;
+    height: auto;
+    border: 2px solid #9dd8ef;
+}
+
+/* CONTACT FORM */
+form {
+    width: 80%;
+    max-width: 850px;
+    margin: 20px auto;
+}
+
+input, select {
+    padding: 7px;
+    border: 1px solid #9dd8ef;
+    border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #42a5d5;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #1976a8;
+}
+
+/* LINK */
+body > a,
+.card + a,
+p a {
+    color: #1976a8;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+body > a:hover,
+.card + a:hover,
+p a:hover {
+    color: #0d5275;
+}
+
+/* BONUS: ANIMATION SEDERHANA */
+.card {
+    animation: muncul 0.7s ease;
+}
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* AGAR NYAMAN DI HP */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .card {
+        width: 80%;
+        padding: 15px;
+    }
+
+    #profile-photo {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* BAGIAN LINK DI PALING BAWAH */
+p a {
+    display: block;
+    width: 90%;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: #bde7f7;
+    color: #1976a8;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+p a:hover {
+    background-color: #42a5d5;
+    color: white;
+}
